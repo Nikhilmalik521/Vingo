@@ -95,17 +95,17 @@ graph TD
     Store --> OwnerSlice[ownerSlice.js]
     Store --> MapSlice[mapSlice.js]
 
-    UserSlice --> US1[userData: User Profile Object]
-    UserSlice --> US2[cart: Array of Cart Items]
-    UserSlice --> US3[role: "customer" | "owner" | "deliveryBoy"]
-    UserSlice --> US4[myOrders: Active & Past Orders List]
+    UserSlice --> US1["userData: User Profile Object"]
+    UserSlice --> US2["cart: Array of Cart Items"]
+    UserSlice --> US3["role: customer / owner / deliveryBoy"]
+    UserSlice --> US4["myOrders: Active & Past Orders List"]
 
-    OwnerSlice --> OS1[myShop: Vendor Shop Details]
-    OwnerSlice --> OS2[myItems: Array of Vendor Items]
-    OwnerSlice --> OS3[ownerOrders: Vendor Received Orders]
+    OwnerSlice --> OS1["myShop: Vendor Shop Details"]
+    OwnerSlice --> OS2["myItems: Array of Vendor Items"]
+    OwnerSlice --> OS3["ownerOrders: Vendor Received Orders"]
 
-    MapSlice --> MS1[userLocation: [lat, lng]]
-    MapSlice --> MS2[deliveryBoyLocation: [lat, lng]]
+    MapSlice --> MS1["userLocation: [lat, lng]"]
+    MapSlice --> MS2["deliveryBoyLocation: [lat, lng]"]
 ```
 
 ### Complete Runtime Redux State Tree Schema
